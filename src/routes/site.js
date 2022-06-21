@@ -3,7 +3,8 @@ const router = express.Router();
 
 const siteController = require('../controllers/SiteController');
 
-router.get('/introdu', siteController.introduu) ;
+router.get('/introdu', siteController.intro);
+router.get('/contact', siteController.contact);
 router.get('/', siteController.home) ;
 
 

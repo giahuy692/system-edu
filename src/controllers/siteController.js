@@ -2,8 +2,13 @@ class SiteController {
     home(req, res){
         res.send('Hello world');
     }
-    introdu(req, res){
-        res.send('Hello  introdu');
+    
+    intro(req, res){
+        res.send('your introduce');
+    }
+
+    contact(req, res) {
+        res.send('My contact')
     }
 }
 
