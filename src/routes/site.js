@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const siteController = require('../controllers/SiteController');
+const siteController = require('../app/controllers/SiteController');
 
 router.get('/introdu', siteController.intro);
 router.get('/contact', siteController.contact);
