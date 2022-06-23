@@ -5,13 +5,17 @@ const port = 4000;
 const morgan = require('morgan');
 const route = require('./routes');
 
+
 // Database
 const database = require('./config/database');
 database.connect();
 
+// EJS
+app.set("view engine","ejs");
+app.set("views", path.join(__dirname,'resources', 'views'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('combined'));
-app.set('views',path.join(__dirname,'resources/views'));
 
 route(app);
 

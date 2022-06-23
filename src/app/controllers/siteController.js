@@ -1,6 +1,8 @@
 class SiteController {
     home(req, res){
-        res.send('Hello world');
+        res.render('index', {
+            title: 'Trang chủ',
+        })
     }
     
     intro(req, res){
