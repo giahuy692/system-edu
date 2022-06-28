@@ -1,6 +1,6 @@
 class SiteController {
     home(req, res){
-        res.render('index', {
+        res.render('pages/index', {
             title: 'Trang chủ',
         })
     }
